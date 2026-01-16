@@ -4,22 +4,19 @@
     <title>Grid</title>
     <link rel="stylesheet" href="style.css">
    <style>
-        .item { grid-area: header; }
+        .first-item { grid-area: header; }
 
-        .item { grid-area: menu; }
+        .second-item { grid-area: leftNav; }
 
-        .item { grid-area: main; }
+        .third-item { grid-area: main; }
 
-        .item { grid-area: right;}
-
-        .item { grid-area: footer;}
 
         .grid-container {
             display: grid;
             grid-template-areas: 
-            'header header header header header header'
-            'main main main main right right'
-            'menu footer footer footer footer footer';
+            'leftNav header header'
+            'leftNav main main'
+        
 
             gap: 10px;
         }
